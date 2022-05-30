@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign-up form </title>
+</head>
+
+<body>
+    <div class="leftBloc">
+        <div class="logoBloc">
+            <img src="odin-lined.png" alt="Odin Logo">
+            <p class="logoText">ODIN</p>
+        </div>
+        <div class="photoOwner"> Photo by Halie West on Unsplash</div>
+    </div>
+    <div class="rightBloc">
+        <div class="userInformations">
+            <div class="headingText">
+                <p>
+                    This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <em>Sign up now</em> to get started.
+                </p>
+                <p class="lastLine">You know you want to.</p>
+            </div>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Let's do this </legend>
+                    <div class="identity">
+                        <div class="firstNameContainer">
+                            <label for="firstName"> FirstName</label>
+                            <input type="text" id="firstName" name="firstName">
+                        </div>
+                        <div class="lastNameContainer">
+                            <label for="lastName"> Last Name</label>
+                            <input type="text" id="lastName" name="lastName">
+                        </div>
+                    </div>
+                    <div class="contacts">
+                        <div class="emailContainer">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="phoneNumberContainer">
+                            <label for="phoneNumber"> Phone number</label>
+                            <input type="text" id="phoneNumber" name="phone">
+                        </div>
+                    </div>
+                    <div class="passwordsContainer">
+                        <div class="password">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password">
+                            <div id="error"></div>
+                        </div>
+                        <div class="confirmationPassword">
+                            <label for="passwordConfirmation"> Confirm Password</label>
+                            <input type="password" id="passwordConfirmation" name="passwordConfirm">
+                        </div>
+                    </div>
+                </fieldset>
+
+        </div>
+        <div class="separator"> &nbsp; </div>
+        <div class="buttonContainer">
+            <button type="submit" class="submitButton"> Create Account </button>
+            <p>Already have an account? <a href="" class="loginLink">Log In</a></p>
+        </div>
+        </form>
+
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>

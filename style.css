@@ -1,0 +1,174 @@
+:root {
+    box-sizing: border-box;
+    --back-ground-color: #eaedf0;
+    --button-color: #596D48;
+    --input-border-color: #e5e7eb;
+}
+
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(Norse-Bold.otf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-family: sans-serif;
+}
+
+.leftBloc {
+    background-image: url(img.jpg);
+    background-size: 400px 100%;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logoBloc {
+    margin-top: 25vh;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 6rem;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+img[src="odin-lined.png"] {
+    height: 6rem;
+}
+
+.logoText {
+    font-family: Norse-Bold;
+    font-size: 4.5rem;
+    color: white;
+}
+
+.rightBloc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(250, 245, 245);
+}
+
+
+/*
+.userInformations {
+    margin: 20vh 3rem 0 2rem;
+}
+*/
+
+.separator {
+    background-color: var(--back-ground-color);
+    height: 5px;
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.headingText {
+    font-weight: bold;
+    margin: 22vh 3rem 4rem 2rem;
+    margin-bottom: 4rem;
+}
+
+.lastLine {
+    margin-top: 1rem;
+}
+
+legend {
+    position: relative;
+    top: 1rem;
+    font-weight: bold;
+    margin: .2rem 3rem 1rem 2rem;
+}
+
+label {
+    display: block;
+    text-transform: uppercase;
+    font-size: .6rem;
+    width: 12rem;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: .2rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 12rem;
+    font-size: 1rem;
+    height: 1.2rem;
+    border: 1px solid var(--input-border-color);
+    border-radius: 3px;
+}
+
+.identity,
+.contacts,
+.passwordsContainer {
+    margin: 1rem 3rem 1rem 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+fieldset input {
+    margin-bottom: 1em;
+}
+
+
+/*
+fieldset {
+    margin-bottom: 2rem;
+}
+*/
+
+.buttonContainer {
+    margin: 2rem 3rem 12% 2rem;
+}
+
+button {
+    width: 11rem;
+    color: white;
+    background-color: var(--button-color);
+    border-radius: .4rem;
+    padding: .7rem 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.loginLink {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--button-color);
+}
+
+input:focus {
+    border: 1px solid blue;
+    outline: none;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+#error {
+    font-weight: bold;
+    font-size: .6rem;
+}
+
+.photoOwner {
+    color: white;
+    font-size: .7rem;
+    text-align: center;
+    padding-bottom: 20px;
+}
